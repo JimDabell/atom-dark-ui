@@ -1,0 +1,18 @@
+
+.tree-view {
+  font-size: 120%;
+  font-family: SFMono-Light, Menlo, Monaco, monospace;
+}
+
+.list-group li:not(.list-nested-item),
+.list-tree li:not(.list-nested-item),
+.list-group li.list-nested-item > .list-item,
+.list-tree li.list-nested-item > .list-item {
+  line-height: 2;
+
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: @text-color-highlight;
+  }
+}
